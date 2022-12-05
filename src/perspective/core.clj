@@ -1,7 +1,7 @@
 (ns perspective.core
-  (:gen-class))
+  (:import
+   [javafx.application Application]))
 
 (defn -main
-  "I don't do a whole lot ... yet."
   [& args]
-  (println "Hello, World!"))
+  (Application/launch perspective.window args)) 
